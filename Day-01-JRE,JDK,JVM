@@ -1,0 +1,49 @@
+JRE-Java Runtime Environment
+->Includes JVM+Core Libraries+Other files needed to run java apps.
+
+JDK-Java Development Kit
+->Includes JRE+Development tools
+
+JVM-Java Virtual Machine
+->Runs java bytecode on any platform.
+->Responsibilities-executing java programs.
+
+components of JVM:-
+Class Loader->loads java classes into memory at runtime.
+Responsible:-
+->loading-find and load classs files .class.
+->Linking-Verification,preparation,Resolution.
+->Initialization-Executes static initializer and static blocks.
+
+Types of Class Loaders:-
+1.Bootstrap ClassLoader-Core Java clases from JAVA_HOME/lib.
+2.Extension ClassLoader-Loads classes from JAVA_HOME/lib/ext.
+3.System ClassLoader-Loads classes from application classpath.
+
+Runtime Data Areas:-
+1.Heap-Stores all java objects and instance variables.Shared among all threads.
+
+2.Stack-Each thread has own stack.Stores method call frames:local variables,parameters,partial results.
+
+3.PC Registers:-Keep track of address of current JVM instruction being execute for each thread.
+
+4.Method Area:-
+->Stores class level data:-
+1.class structures
+2.static variables
+3.constant pool
+4.method metadata
+
+5.Native Methods:-
+->Used for executing native methods,often written in C/C++.
+->Each Thread has its own native stack.
+
+Execution Engine:-
+Responsibilities-executing java bytecode has been loaded into memeory by classloader.
+
+Interpreter-Read and Executes bytecode line by line.
+JIT-Just-In-Time Compiler-Converts entire bytecode clocks into native machine code at runtime.
+Garbage Collector-collecting the unwanted files an directories.Manage meory while execute coding.
+
+Native Method Interface:-
+->Allows JVM to interact with native code written in other programming languages like c,c++ or assembly.
