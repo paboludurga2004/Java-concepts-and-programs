@@ -1,0 +1,31 @@
+Variables:-
+used to store data changes during program execution.
+
+syntax:-
+datatype variableName=value;
+
+Local Variable-Declared inside block or method.
+Instance Variable-Declared outside block and inside the class.
+Static Variable-Declared with static keyword.
+Final Variable-Declared with final keyword.
+
+class Example {
+    int instanceVar = 10;      // instance variable
+    static int classVar = 20;  // static variable
+
+    void method() {
+        int localVar = 30;     // local variable
+        final int CONSTANT = 40; // final variable
+    }
+}
+
+Datatypes:-
+byte b=10;
+int i=500;
+long l=10000L;
+short s=100;
+float f=5.5f;
+double d=19.99;
+char c='A';
+boolean flag=true;
+
