@@ -5,11 +5,11 @@ Here’s the structured **Java Progress Checklist with colors**:
 
 ---
 
-```markdown
+markdown
 # 🚀 My Java Learning Progress Tracker  
 
 ## Core Java 🔴
-- [ ] JRE,JDK,JVM 
+- [X] JRE,JDK,JVM 
 - [ ] Variables and Data Types  
 - [ ] Operators  
 - [ ] Control Statements (if, switch)  
