@@ -8,7 +8,8 @@ Here’s the structured **Java Progress Checklist with colors**:
 ```markdown
 # 🚀 My Java Learning Progress Tracker  
 
-## Core Java 🔴  
+## Core Java 🔴
+- [ ] JRE,JDK,JVM 
 - [ ] Variables and Data Types  
 - [ ] Operators  
 - [ ] Control Statements (if, switch)  
@@ -135,4 +136,6 @@ Do you also want me to **add Design Patterns (🟠)** into this same progress tr
 
 ## EJB 🟡  
 ![EJB](https://img.shields.io/badge/EJB-0%25-yellow)
+
+![Core Java](https://img.shields.io/badge/Core%20Java-██████████░░░░░░░-red?style=flat-square)
 
