@@ -1,0 +1,104 @@
+Arithmetic Operator:-
++,-,*,/,%
+
+class ArithmeticOperator{
+    public static void main(String[] args){
+        int a = 10, b = 5;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+   }
+}
+
+Relational Operator:-
+==,!=,>=,<=,>,<
+
+class RelationalOperator{
+    public static void main(String[] args){
+        int a = 10, b = 5;
+        System.out.println("a == b: " + (a == b));
+        System.out.println("a != b: " + (a != b));
+        System.out.println("a > b: " + (a > b));
+        System.out.println("a < b: " + (a < b));
+        System.out.println("a >= b: " + (a >= b));
+        System.out.println("a <= b: " + (a <= b));
+    }
+}
+
+Logical Operator:-
+&&,||,!
+
+class Logical{
+    public static void main(String[] args){
+        int x=true,y=false;
+        System.out.println("x && y: " + (x && y));
+        System.out.println("x || y: " + (x || y));
+        System.out.println("!x: " + (!x));
+    }
+}
+
+Assignment Operator:-
+=,+=,-=,*=,/=,%=
+
+class Assignment{
+    public static void main(String[] args){
+        int c = 20;
+        
+        c += 5;
+        System.out.println("c += 5: " + c);
+        c -= 3;
+        System.out.println("c -= 3: " + c);
+        c *= 2;
+        System.out.println("c *= 2: " + c);
+        c /= 4;
+        System.out.println("c /= 4: " + c);
+        c %= 3;
+        System.out.println("c %= 3: " + c);
+    }
+}
+
+Unary Operator:-
+++,--
+
+class unary{
+    public static void main(String[] args){
+        int c = 20;
+        c += 5;
+        System.out.println("c += 5: " + c);
+        c -= 3;
+        System.out.println("c -= 3: " + c);
+        c *= 2;
+        System.out.println("c *= 2: " + c);
+        c /= 4;
+        System.out.println("c /= 4: " + c);
+        c %= 3;
+        System.out.println("c %= 3: " + c);
+    }
+}
+
+
+Bitwise Operator:-
+&,|,^,~,<<,>>
+  
+class Bitwise{
+   Public static void main(String[] args){
+       int e = 5, f = 3;
+       System.out.println("e & f: " + (e & f));
+       System.out.println("e | f: " + (e | f));
+       System.out.println("e ^ f: " + (e ^ f));
+       System.out.println("~e: " + (~e));
+       System.out.println("e << 1: " + (e << 1));
+       System.out.println("e >> 1: " + (e >> 1));
+   }
+}
+
+Ternary Operator:-
+
+class Ternary{
+    public static void main(String[] args){
+        int a=10,b=15;
+        int max = (a > b) ? a : b;
+        System.out.println("Max of a and b: " + max);
+    }
+}
+
