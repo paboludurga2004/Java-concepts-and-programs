@@ -13,7 +13,7 @@ markdown
 - [X] Variables and Data Types  
 - [X] Operators  
 - [X] Control Statements (if, switch)  
-- [ ] Loops (for, while)  
+- [X] Loops (for, while)  
 - [ ] Methods & Recursion  
 - [ ] OOPs Basics  
 - [ ] Arrays & Strings  
