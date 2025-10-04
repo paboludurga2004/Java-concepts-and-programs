@@ -11,7 +11,7 @@ markdown
 ## Core Java 🔴
 - [X] JRE,JDK,JVM 
 - [X] Variables and Data Types  
-- [ ] Operators  
+- [X] Operators  
 - [ ] Control Statements (if, switch)  
 - [ ] Loops (for, while)  
 - [ ] Methods & Recursion  
