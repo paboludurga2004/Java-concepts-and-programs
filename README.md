@@ -12,7 +12,7 @@ markdown
 - [X] JRE,JDK,JVM 
 - [X] Variables and Data Types  
 - [X] Operators  
-- [ ] Control Statements (if, switch)  
+- [X] Control Statements (if, switch)  
 - [ ] Loops (for, while)  
 - [ ] Methods & Recursion  
 - [ ] OOPs Basics  
