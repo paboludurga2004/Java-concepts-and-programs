@@ -1,0 +1,105 @@
+Control Statements:-Decision making sttatements
+
+if statement:-
+-> Executes a block if condition is true.
+
+class Age{
+    public static void main(String[] args){
+        int age=20;
+        if (age>18){
+            System.out.println("Age is:"+age);
+        }
+    }
+}
+
+if-else statement:-
+-> Executes one block if condition is true, another if false.
+
+class EvenOdd{
+    public static void main(String[] args){
+        int num = 5;
+        if (num % 2 == 0) {
+           System.out.println("Even number");
+        } else {
+           System.out.println("Odd number");
+        }
+    }
+}
+
+if-else-if statement:-
+-> Used when multiple conditions exist.
+
+class Marks{
+    public static void main(String[] args){
+        int marks = 75;
+        if (marks >= 90) {
+           System.out.println("Grade A");
+        } else if (marks >= 75) {
+           System.out.println("Grade B");
+        } else if (marks >= 50) {
+           System.out.println("Grade C");
+        } else {
+           System.out.println("Fail");
+        }
+    }
+}
+
+Nested if statement:-
+-> if inside another if.
+
+class PositiveOrNegative{
+    public static void main(String[] args){
+        int a = 10, b = 20;
+        if (a > 0) {
+           if (b > 0) {
+              System.out.println("Both numbers are positive");
+           }
+        }
+    }
+}
+
+Switch statement:-
+-> Used when you have multiple fixed choices.
+
+class Days{
+    public static void main(String[] args){
+        int day = 3;
+        switch(day) {
+            case 1: System.out.println("Monday"); break;
+            case 2: System.out.println("Tuesday"); break;
+            case 3: System.out.println("Wednesday"); break;
+            default: System.out.println("Invalid day");
+        }
+    }
+}
+
+Break:-
+-> Exit loops immediaely.
+
+class Break{
+    public static void main(String[] args){
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) break;
+            System.out.println(i);
+        }
+    }
+}
+
+Continue:-
+-> Skips the current iteration.
+
+class Continue{
+    public static void main(String[] args){
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) continue;
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+
+
+
+
