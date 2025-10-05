@@ -1,0 +1,106 @@
+Method:-
+    A method is a block of code that performs a specific task.
+
+Syntax:-
+modifier returnType methodName(parameters) {
+    // method body
+    // code to perform a task
+    return value; // if returnType is not void
+}
+
+Example:-
+class Test {
+    
+    // method that adds two numbers
+    public static int add(int a, int b) {
+        return a + b;
+    }
+
+    public static void main(String[] args) {
+        int sum = add(5, 3); // calling the method
+        System.out.println("Sum: " + sum);
+    }
+}
+
+Types of recursion:-
+1.Void method: Does not return a value.
+
+public static void greet() {
+    System.out.println("Hello!");
+}
+
+2.Non Void method: return a value.
+public static int multiply(int a, int b) {
+    return a * b;
+}
+
+3.No-parameter method
+public static void showMessage() {
+    System.out.println("Welcome!");
+}
+
+4.parameter method
+public static void greet(String name) {
+    System.out.println("Hello " + name);
+}
+
+Method Overloading:-Same method name, different parameters
+
+public static int add(int a, int b) { return a + b; }
+public static double add(double a, double b) { return a + b; }
+
+Static Method-Belongs to the class, not the object.
+public static void display() {
+    System.out.println("Static method called");
+}
+
+Instance Method-Belongs to the object.
+
+public void show() {
+    System.out.println("Instance method called");
+}
+
+Recursive Method-A method that calls itself.
+
+public static int factorial(int n) {
+    if (n == 0) return 1;
+    return n * factorial(n - 1);
+}
+
+
+Abstract Method-Declared in an abstract class or interface, no body.
+
+abstract class Shape {
+    abstract void draw();
+}
+
+Recursion:-A function calls itself.
+
+public class RecursionExample {
+
+    public static int factorial(int n) {
+        if (n == 0) { // Base case
+            return 1;
+        }
+        return n * factorial(n - 1); // Recursive case
+    }
+
+    public static void main(String[] args) {
+        int result = factorial(5);
+        System.out.println("Factorial: " + result);
+    }
+}
+
+factorial(5) → 5 * factorial(4)
+
+factorial(4) → 4 * factorial(3)
+
+factorial(3) → 3 * factorial(2)
+
+factorial(2) → 2 * factorial(1)
+
+factorial(1) → 1 * factorial(0)
+
+factorial(0) → 1 (base case)
+
+  
