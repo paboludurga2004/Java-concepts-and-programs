@@ -12,7 +12,7 @@ markdown
 - [X] Operators  
 - [X] Control Statements (if, switch)  
 - [X] Loops (for, while)  
-- [ ] Methods & Recursion
+- [X] Methods & Recursion
 - [ ] OOPs Basics  
 - [ ] Arrays & Strings  
 - [ ] Collections Framework  
