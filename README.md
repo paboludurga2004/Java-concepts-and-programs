@@ -1,6 +1,4 @@
-# Java-concepts-and-programs
-Nice 🔥 You want to build a **complete Java learning progress tracker** in GitHub with **colored categories** (using emojis for color codes since GitHub Markdown doesn’t support text coloring).
-
+# Java-concepts-and-programs  
 Here’s the structured **Java Progress Checklist with colors**:
 
 ---
@@ -14,11 +12,18 @@ markdown
 - [X] Operators  
 - [X] Control Statements (if, switch)  
 - [X] Loops (for, while)  
-- [ ] Methods & Recursion  
+- [ ] Methods & Recursion
 - [ ] OOPs Basics  
 - [ ] Arrays & Strings  
 - [ ] Collections Framework  
 
+## Design Patterns 🟠  
+- [ ] Singleton  
+- [ ] Factory  
+- [ ] Observer  
+- [ ] Strategy  
+- [ ] Adapter  
+- [ ] Decorator  
 ## Exception Handling & File Handling 🟢  
 - [ ] Exception Hierarchy  
 - [ ] Try, Catch, Finally  
