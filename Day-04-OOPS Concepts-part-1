@@ -1,0 +1,180 @@
+class-Template to create objects having similar properties and behavior.
+
+object-Instance of class.
+1.State->Represents attributes of objects.
+2.Behaviour->Method of objects.
+3.Identity->Give unique name to object from one object to another object.
+
+example:-
+class Student{
+    int id;
+    String n;
+
+    public Student(int id,String n){
+        this.id=id;
+        this.n=n;
+   }
+}
+class Main{
+    public static void main(String[] args){
+        Student s1=new Student(10,"Durga Prasad");
+        System.out.println(s1.id);
+        System.out.println(s1.n);
+    }
+}
+
+example-2:-
+class Student{
+    static String name;
+    static float price;
+
+    static void set(String n,float p){
+        name=n;
+        price=p;
+   }
+   static void get(){
+       System.out.println("Software name:"+name);
+       System.out.println("Software price:"+price);
+   }
+   public static void main(String[] args){
+       Student.get("Visual studio",0.0f);
+       Student.get();
+   }
+}
+
+object creation:-
+Test t=new Test();
+
+clone:-
+Test t1=new Test();
+Test t2=(Test)t1.clone();
+
+Deserialization:-
+/*student implements serializable{
+    private String name;
+    public Student(String name){
+        this.name=name;
+    }
+    @override public String toString(){
+         return "student:"+name;
+   }
+ }
+ class Main{
+    public static void main(String[] args){
+        //serialization
+        try(ObjectOutputStream out=new ObjectOutputStream(new FileOutputStream("student.ser"))){
+           out.writeObject(new Student("Alice");
+        }
+        catch (IOException e){
+          e.printStackTrace();
+        }
+        //deserialisation
+        try(ObjectInputStream in=new ObjectInputStream(new FileInputStream("student.ser"))){
+           Student s=(Student)s1.readObject();
+           System.out.println(s);
+        }
+     }
+  }
+
+Constructor-when object is created
+
+class ClassName{
+    ClassName(){
+    }
+}
+
+rules:-
+1.Constructor name must be same as class name.
+2.does not have return value.
+3.Automatically called when you create an object using new.
+4.Multiple constructors in class.
+
+example:-
+class Student{
+    int id;
+    String name;
+
+    Student(){//default
+         id=1;
+         name="Durga";
+    }
+    void display(){
+        System.out.println(id+" "+name);
+    }
+}
+class main{
+    public static void main(String[] args){
+        Student s1=new Student();
+        s1.display();
+    }
+}
+
+example:-
+example:-
+class Student{
+    int id;
+    String name;
+
+    Student(int i, String n){//parameterised 
+         id=i;
+         name=n;
+    }
+    void display(){
+        System.out.println(id+" "+name);
+    }
+}
+class main{
+    public static void main(String[] args){
+        Student s1=new Student(101,"Durga");
+        Student s2=new Student(102,"Prasad");
+        s1.display();
+        s2.display();
+    }
+}
+
+copy constructor:-
+// Java Program for Copy Constructor
+import java.io.*;
+
+class Geeks {
+    
+    // data members of the class
+    String name;
+    int id;
+
+    // Parameterized Constructor
+    Geeks(String name, int id)
+    {
+        this.name = name;
+        this.id = id;
+    }
+
+    // Copy Constructor
+    Geeks(Geeks obj2)
+    {
+        this.name = obj2.name;
+        this.id = obj2.id;
+    }
+}
+
+class GFG {
+    public static void main(String[] args)
+    {
+        // This would invoke the parameterized constructor
+        System.out.println("First Object");
+        Geeks geek1 = new Geeks("Sweta", 68);
+        System.out.println("GeekName: " + geek1.name
+                           + " and GeekId: " + geek1.id);
+
+        System.out.println();
+
+        // This would invoke the copy constructor
+        Geeks geek2 = new Geeks(geek1);
+        System.out.println(
+            "Copy Constructor used Second Object");
+        System.out.println("GeekName: " + geek2.name
+                           + " and GeekId: " + geek2.id);
+    }
+}
+
+    
