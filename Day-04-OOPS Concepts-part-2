@@ -1,0 +1,353 @@
+Inheritance-allows one class (child/subclass) to acquire properties and methods of another class (parent/superclass).
+
+single Inheritnace
+class Animal {       // Parent class
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {   // Child class inherits Animal
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();  // inherited method
+        d.bark(); // child class method
+    }
+}
+
+Multilevel Inheritance-class is derived from another class.
+
+
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+class Puppy extends Dog {
+    void weep() {
+        System.out.println("Weeping...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Puppy p = new Puppy();
+        p.eat();
+        p.bark();
+        p.weep();
+    }
+}
+
+Hierarchical Inheritance-Multiple child classes inherit from a single parent class.
+
+class Animal {
+    void eat() {
+        System.out.println("Eating...");
+    }
+}
+
+class Dog extends Animal {
+    void bark() {
+        System.out.println("Barking...");
+    }
+}
+
+class Cat extends Animal {
+    void meow() {
+        System.out.println("Meowing...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.eat();
+        d.bark();
+
+        Cat c = new Cat();
+        c.eat();
+        c.meow();
+    }
+}
+
+Multiple Inheritance-Java does not allow multiple inheritance with classes to avoid ambiguity (known as the Diamond Problem).
+
+
+class A {
+    void show() {
+        System.out.println("Class A");
+    }
+}
+
+class B {
+    void show() {
+        System.out.println("Class B");
+    }
+}
+
+
+// class C extends A, B { }
+
+Hybrid Inheritance-Combination of more than one type — achieved through interfaces, not classes.
+
+interface A {
+    void displayA();
+}
+
+interface B {
+    void displayB();
+}
+
+class C implements A, B {
+    public void displayA() {
+        System.out.println("From A");
+    }
+    public void displayB() {
+        System.out.println("From B");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+        obj.displayA();
+        obj.displayB();
+    }
+}
+
+super keyword-Used to refer to the parent class.
+
+class Animal {
+    String color = "White";
+}
+
+class Dog extends Animal {
+    String color = "Black";
+
+    void printColor() {
+        System.out.println(color);        // child color
+        System.out.println(super.color);  // parent color
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.printColor();
+    }
+}
+
+This Keyword-refers to the current object of the class.
+
+class Student {
+    int id;
+    String name;
+
+    Student(int id, String name) {
+        this.id = id;     // "this.id" refers to instance variable
+        this.name = name; // "name" refers to parameter
+    }
+
+    void display() {
+        System.out.println(id + " " + name);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s1 = new Student(101, "Durga");
+        s1.display();
+    }
+}
+
+
+polymorphism-allows a single action (method or object) to behave differently based on the context.
+
+Method overloading-same name and different parameters.
+
+class Calculator {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    double add(double a, double b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Calculator calc = new Calculator();
+        System.out.println(calc.add(10, 20));        // int version
+        System.out.println(calc.add(2.5, 3.5));      // double version
+        System.out.println(calc.add(5, 10, 15));     // 3 parameters
+    }
+}
+
+
+Method Overriding-child class provides a specific implementation of a method already defined in its parent class.
+
+
+class Animal {
+    void sound() {
+        System.out.println("Animal makes a sound");
+    }
+}
+
+class Dog extends Animal {
+    void sound() {  // overriding parent method
+        System.out.println("Dog barks");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();  // Upcasting
+        a.sound();             // Dog’s version is called
+    }
+}
+
+
+Encapsulation-It is the process of binding data (variables) and methods (functions) that operate on that data into a single unit (class) and restricting direct access to some of the object’s components.
+
+class Student {
+    // Private data members
+    private String name;
+    private int age;
+
+    // Public setter method
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    // Public getter method
+    public String getName() {
+        return name;
+    }
+
+    // Public setter method
+    public void setAge(int age) {
+        if(age > 0) {  // validation logic
+            this.age = age;
+        } else {
+            System.out.println("Age cannot be negative!");
+        }
+    }
+
+    // Public getter method
+    public int getAge() {
+        return age;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Student s = new Student();
+
+        // Set values using setters
+        s.setName("Durga Prasad");
+        s.setAge(21);
+
+        // Get values using getters
+        System.out.println("Name: " + s.getName());
+        System.out.println("Age: " + s.getAge());
+    }
+}
+
+Abstraction-the process of hiding the implementation details and showing only the essential features of an object to the user.
+
+abstract class Animal {
+    // Abstract method (no implementation)
+    abstract void makeSound();
+
+    // Concrete method
+    void sleep() {
+        System.out.println("Sleeping...");
+    }
+}
+
+class Dog extends Animal {
+    // Implementing abstract method
+    void makeSound() {
+        System.out.println("Dog barks 🐶");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal a = new Dog();
+        a.makeSound(); // Calls Dog’s implementation
+        a.sleep();     // Calls concrete method
+    }
+}
+
+
+Interface-An interface is a collection of abstract methods (methods without a body) and constants.
+
+interface Vehicle {
+    void start();  // abstract method
+    void stop();   // abstract method
+}
+
+class Car implements Vehicle {
+    public void start() {
+        System.out.println("Car started 🚗");
+    }
+
+    public void stop() {
+        System.out.println("Car stopped 🚦");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Vehicle v = new Car();
+        v.start();
+        v.stop();
+    }
+}
+
+Multiple interface-supports multiple inheritance with interfaces.
+
+interface A {
+    void show();
+}
+
+interface B {
+    void display();
+}
+
+class C implements A, B {
+    public void show() {
+        System.out.println("Showing from A");
+    }
+
+    public void display() {
+        System.out.println("Displaying from B");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        C obj = new C();
+        obj.show();
+        obj.display();
+    }
+}
