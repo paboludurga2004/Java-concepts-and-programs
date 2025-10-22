@@ -30,7 +30,7 @@ Logical Operator:-
 
 class Logical{
     public static void main(String[] args){
-        int x=true,y=false;
+        boolean x=true,y=false;
         System.out.println("x && y: " + (x && y));
         System.out.println("x || y: " + (x || y));
         System.out.println("!x: " + (!x));
@@ -63,16 +63,8 @@ Unary Operator:-
 class unary{
     public static void main(String[] args){
         int c = 20;
-        c += 5;
-        System.out.println("c += 5: " + c);
-        c -= 3;
-        System.out.println("c -= 3: " + c);
-        c *= 2;
-        System.out.println("c *= 2: " + c);
-        c /= 4;
-        System.out.println("c /= 4: " + c);
-        c %= 3;
-        System.out.println("c %= 3: " + c);
+        System.out.println(c++);
+        System.out.println(c--);
     }
 }
 
